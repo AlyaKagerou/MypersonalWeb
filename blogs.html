@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            darkMode:'class',
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar{
+            width:12px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #159df8;
+            border-radius: 6px;
+        }
+    </style>
+    <title>My Blog - Alya Zalfa</title>
+</head>
+<body class="bg-white dark:bg-slate-900 dark:text-slate-200">
+    <div>
+        <div class="mt-10">
+            <h1 class="text-center text-4xl text-black dark:text-slate-100 font-['KR_SABER_FONT']">ZHALZ</h1>
+        </div>
+        <div class="mx-5">
+            <svg class="mx-auto mt-5" xmlns="http://www.w3.org/2000/svg" width="226.556" height="83.044" viewBox="0 0 226.556 83.044">
+                <g id="Group_16" data-name="Group 16" transform="translate(-867.373 -1496.808)">
+                    <path id="Path_2" data-name="Path 2" d="M625.139,876.841V932.97L522.721,955.182l-4.674,1.014V895.55Z" transform="matrix(0.999, 0.035, -0.035, 0.999, 383.012, 602.422)" fill="#159df8"/>
+                    <text class="fill-black dark:fill-slate-100" id="Blog" transform="translate(983.929 1551)" fill="#159df8" font-size="49" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="0" y="0">Blog</tspan></text>
+                    <text class="fill-slate-100 dark:fill-black" id="My" transform="translate(888 1551)" font-size="49" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="0" y="0">My</tspan></text>
+                </g>
+            </svg>
+        </div>
+
+        <!--button for darkmode-->
+        <div class="relative mx-5">
+            <button class="bg-black hover:bg-[#0096c7] mx-auto px-3 py-3 rounded-md my-[430px] fixed md:right-10" id="toggle">
+                <i class="mx-auto bx bx-moon bx-sm text-white"></i>
+            </button>
+        </div>
+        <!--button for darkmode-->
+
+        <!--main blog-->
+        <div class="max-w-full bg-slate-200 dark:bg-slate-800 rounded-md mx-12 mt-3">
+            <div class="flex p-5">
+                <img src="https://dummyimage.com/450x250/000/fff" alt="blog1" class="hidden md:block rounded-md">
+                <div class="ml-3">
+                    <h1 class="font-bold text-black dark:text-slate-100 text-4xl font-['Rubik'] my-2">Seputar Multimedia</h1>
+                    <p class="font-['Nunito'] text-black dark:text-slate-100 text-md font-semibold text-justify">
+                        Semakin berkembangan zaman semakin pula berkembangnya akal manusia untuk menciptakan inovasi di dunia teknologi yang lebih canggih. Di Kehidupan sehari-hari, teknologi sudah memberikan kemudahan dalam berbagai aktivitas seperti dalam menyampaikan informasi kepada khalayak umum yang disebut dengan Multimedia.
+                    </p>
+                    <button class="bg-[#0096c7] py-2 px-2 text-sm mt-3 rounded-md">
+                        <a href="Seputar_multimedia.html"></a> Read More..
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--main blog-->
+
+            <div class="flex mt-5 mx-12 md:items-center md:justify-center">
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <!--article more-->
+                    <div class="max-w-full bg-slate-200 dark:bg-slate-800 rounded-md p-3">
+                        <img src="https://dummyimage.com/450x250/000/fff" alt="#" class="rounded-lg hidden md:block">
+                        <h1 class="font-bold text-black dark:text-slate-100 text-2xl font-['Rubik'] my-1">Lorem Ipsum</h1>
+                        <p class="font-['Nunito'] text-black dark:text-slate-100 text-lg mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem, excepturi maxime facilis harum tempora aut adipisci corporis dignissimos quo reiciendis velit perferendis autem et?</p>
+                        <button class="bg-[#0096c7] py-2 px-2 text-sm mt-3 rounded-md">
+                            Read More..
+                        </button>
+                    </div>
+                    <!--more article-->
+
+                    <!--more article-->
+                    <div class="max-w-full bg-slate-200 dark:bg-slate-800 rounded-md p-3">
+                        <img src="https://dummyimage.com/450x250/000/fff" alt="#" class="rounded-lg hidden md:block">
+                        <h1 class="font-bold text-black dark:text-slate-100 text-2xl font-['Rubik'] my-1">Lorem Ipsum</h1>
+                        <p class="font-['Nunito'] text-black dark:text-slate-100 text-lg mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur fuga ad iusto deserunt? Odio nesciunt laborum fugiat assumenda ipsam nihil culpa. Ducimus numquam culpa ipsum?</p>
+                        <button class="bg-[#0096c7] py-2 px-2 text-sm mt-3 rounded-md">
+                            Read More..
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!--footer-->
+        <div class="mt-1 md:p-3 md:mt-3">
+            <h1 class="text-center font-semibold">&copy 2022 All Rights Reserved | Designed by AlyaKagero</h1>
+        </div>
+        <!--footer-->
+    </div>
+
+    <script>
+        document.querySelector('#toggle').addEventListener('click',function (){
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
